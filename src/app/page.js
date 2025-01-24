@@ -4,6 +4,7 @@ import CourseTable from './components/CourseTable'
 import SearchBar from './components/SearchBar'
 import courses from './constants/courses'
 import { useEffect, useState } from 'react'
+
 export default function Home() {
   const [courseList, setCourses] = useState([])
   const [searchTerm, setSearchTerm] = useState('')

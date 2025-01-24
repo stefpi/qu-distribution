@@ -1,5 +1,7 @@
+'use client'
 import Button from '../components/Button'
 import Image from 'next/image'
+import { DialogDemo } from '../components/Overlay'
 export default function Info() {
   return (
     <div>
@@ -15,7 +17,8 @@ export default function Info() {
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <Button text="select documents" />
+          {/* <Button text="select documents" /> */}
+          <DialogDemo />
         </div>
         <div>
           <p className="text-center">
