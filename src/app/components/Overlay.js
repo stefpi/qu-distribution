@@ -39,6 +39,10 @@ export function DialogDemo() {
       return updatedFiles
     })
   }
+  const handleSubmit = () => {
+    // Handle file upload
+    console.log(files)
+  }
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -86,7 +90,11 @@ export function DialogDemo() {
               multiple
             />
           </div>
-          <Button type="submit">upload</Button>
+          <form onSubmit={handleSubmit}>
+            <Button type="submit" onClick={handleSubmit}>
+              upload
+            </Button>
+          </form>
         </DialogFooter>
       </DialogContent>
     </Dialog>

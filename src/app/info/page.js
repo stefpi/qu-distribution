@@ -2,14 +2,17 @@
 import Button from '../components/Button'
 import Image from 'next/image'
 import { DialogDemo } from '../components/Overlay'
+import Link from 'next/link'
 export default function Info() {
   return (
     <div>
       <div className="flex flex-col justify-between h-screen">
         <div>
-          <p className="text-xl text-center font-bold">
-            queen's university grade distributions
-          </p>
+          <Link href="/">
+            <p className="text-xl text-center font-bold">
+              queen's university grade distributions
+            </p>
+          </Link>
           <p className="text-center">document upload</p>
           <p className="text-center">
             uploading your grade distribution is easy. follow the guide below to

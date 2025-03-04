@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import Button from './components/Button'
 import CourseTable from './components/CourseTable'
 import SearchBar from './components/SearchBar'
@@ -34,7 +35,9 @@ export default function Home() {
             <b>please upload your own grade distributions</b> to help out your
             peers. it only takes a <b>couple clicks</b>.
           </p>
-          <Button text="upload your courses documents" />
+          <Link href="/info">
+            <Button text="upload your courses documents" />
+          </Link>
         </div>
         <SearchBar setSearchTerm={setSearchTerm} setCourses={setCourses} />
         <CourseTable courses={courseList} />
