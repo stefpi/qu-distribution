@@ -4,6 +4,8 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .cell {
@@ -73,4 +75,26 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::-webkit-scrollbar {
+  width: 4px; /* Adjust width for vertical scrollbar */
+  height: 8px; /* Adjust height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* No background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.6); /* Subtle color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.8); /* Slightly darker on hover */
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent; /* Makes the corner blend with the background */
 }

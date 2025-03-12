@@ -4,11 +4,13 @@ export default function SearchBar({ setSearchTerm }) {
   }
   return (
     <div className="flex items-center justify-center h-24">
-      <input
-        className="w-1/2 p-3 text-md border-8 border-customGray rounded-lg"
-        placeholder="Search for course..."
-        onChange={handleInputChange}
-      />
+      <div className="bg-customGray rounded-lg p-2 w-1/2">
+        <input
+          className="w-full p-3 text-md rounded-md"
+          placeholder="Search for course..."
+          onChange={handleInputChange}
+        />
+      </div>
     </div>
   )
 }

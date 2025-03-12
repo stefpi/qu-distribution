@@ -21,8 +21,8 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex flex-col justify-evenly h-screen">
-        <div className="flex flex-col justify-evenly items-center min-h-[30vh]">
+      <div className="flex flex-col h-screen">
+        <div className="flex flex-col justify-start items-center gap-[20px]">
           <p className="text-xl text-center font-bold">
             queen's university grade distributions
           </p>
