@@ -16,7 +16,7 @@ export default function CourseTable({ courses }) {
           <div className="cell"></div>
           {/* </div> */}
         </div>
-        <div className="overflow-y-auto max-h-[40vh] space-y-2">
+        <div className="overflow-y-auto h-[40vh] space-y-2">
           {courses.map((course, index) => (
             <Link
               key={index}

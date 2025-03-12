@@ -1,9 +1,11 @@
 'use client'
+import Link from 'next/link'
 import Button from './components/Button'
 import CourseTable from './components/CourseTable'
 import SearchBar from './components/SearchBar'
 import courses from './constants/courses'
 import { useEffect, useState } from 'react'
+
 export default function Home() {
   const [courseList, setCourses] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
@@ -19,8 +21,8 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex flex-col justify-evenly h-screen">
-        <div className="flex flex-col justify-evenly items-center min-h-[30vh]">
+      <div className="flex flex-col h-screen">
+        <div className="flex flex-col justify-start items-center gap-[20px]">
           <p className="text-xl text-center font-bold">
             queen's university grade distributions
           </p>
@@ -33,7 +35,9 @@ export default function Home() {
             <b>please upload your own grade distributions</b> to help out your
             peers. it only takes a <b>couple clicks</b>.
           </p>
-          <Button text="upload your courses documents" />
+          <Link href="/info">
+            <Button text="upload your courses documents" />
+          </Link>
         </div>
         <SearchBar setSearchTerm={setSearchTerm} setCourses={setCourses} />
         <CourseTable courses={courseList} />
